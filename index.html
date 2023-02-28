@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한주정</title>
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Pageable CSS / fullpage -->
+  <link rel="stylesheet" href="./css/pageable.min.css">
+  <!-- Swiper CSS / slider -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <!-- AOS CSS / ani -->
+  <link rel="stylesheet" href="./css/aos.css">
+</head>
+
+<body>
+
+  <div id="wrap">
+    <!-- ------------------- header ------------------- -->
+    <header>
+
+      <!-- PC GNB -->
+      <div class="pc_gnb">
+        <div class="nav_wrap">
+
+          <div class="nav_inner">
+            <div class="menu">
+              <ul class="gnb">
+                <!-- gnb logo -->
+                <li class="gnb_logo clearfix">
+                  <h1><a href="index.html"><img src="./images/logo.png" alt="대한주정 로고"></a></h1>
+                </li>
+                <li class="view">
+                  <a href="./sub/about_01.html">대한주정판매 소개</a>
+                  <ul class="depth depth_01">
+                    <li><a href="./sub/about_01.html">CEO 인사말</a></li>
+                    <li><a href="./sub/about_02.html">회사소개</a></li>
+                    <li><a href="./sub/about_03.html">연혁</a></li>
+                    <li><a href="./sub/about_04.html">조직도</a></li>
+                    <li><a href="./sub/about_05.html">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li class="view">
+                  <a href="./sub/intro_01.html">주정 소개</a>
+                  <ul class="depth">
+                    <li><a href="./sub/intro_01.html">주정이란</a></li>
+                    <li><a href="./sub/intro_02.html">주정의 원료, 종류</a></li>
+                    <li><a href="./sub/intro_03.html">주정의 제조 공정</a></li>
+                  </ul>
+                </li>
+                <li class="view">
+                  <a href="./sub/purpose_01.html">발효주정 용도</a>
+                  <ul class="depth">
+                    <li><a href="./sub/purpose_01.html">주정용도</a></li>
+                  </ul>
+                </li>
+                <li class="view">
+                  <a href="./sub/uses_01.html">발효주정 활용</a>
+                  <ul class="depth">
+                    <li><a href="./sub/uses_01.html">주정의 활용</a></li>
+                    <li><a href="./sub/uses_02.html">제품 만들기 TIP</a></li>
+                  </ul>
+                </li>
+                <li class="view">
+                  <a href="./sub/buying_01.html">구입 방법</a>
+                  <ul class="depth">
+                    <li><a href="./sub/buying_01.html">발효주정 구입 절차</a></li>
+                    <li><a href="./sub/buying_02.html">구매처</a></li>
+                    <li><a href="./sub/buying_03.html">온라인 상담</a></li>
+                  </ul>
+                </li>
+                <li class="view">
+                  <a href="./sub/board_01.html">자료실</a>
+                  <ul class="depth">
+                    <li><a href="./sub/board_01.html">알코올 희석/환산표</a></li>
+                    <li><a href="./sub/board_02.html">관련 업체 소개</a></li>
+                    <li><a href="./sub/board_03.html">구입 서식</a></li>
+                    <li class="center"><a href="#none">고객센터</a>
+                      <div class="center_menu">
+                        <span><a href="./sub/board_01.html">공지사항</a></span>
+                        <span><a href="./sub/board_01.html">1:1문의</a></span>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- GNB Hamburgur btn -->
+                <li class="hamburgur_btn clearfix">
+                  <img src="./images/icon_hamburgur.png" alt="햄버거 버튼">
+                </li>
+              </ul><!-- /gnb end-->
+            </div><!-- /menu end -->
+          </div>
+
+          <!-- PC GNB BG -->
+          <div class="menu_bg"></div><!-- /menu_bg end -->
+
+        </div><!-- /nav_wrap end -->
+      </div> <!-- /PC gnb end  -->
+
+      <!-- MOBILE GNB -->
+      <div class="mobile_gnb">
+        <ul class="m_header">
+          <li class="m_logo">
+            <a href="index.html"><img src="./images/logo_mo.png" alt="로고_모바일"></a>
+          </li>
+          <li class="m_hamburgur clearfix">
+            <a class="menu-trigger" href="#none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- 모바일 드롭다운 메뉴 -->
+        <nav class="m_nav">
+          <ul class="m_menu">
+            <li>
+              <a href="#none" class="category">대한주정판매 소개</a>
+              <ul class="m_sub">
+                <li><a href="./sub/board_01.html">CEO 인사말</a></li>
+                <li><a href="./sub/board_02.html">회사소개</a></li>
+                <li><a href="./sub/board_03.html">연혁</a></li>
+                <li><a href="./sub/board_04.html">조직도</a></li>
+                <li><a href="./sub/board_05.html">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="category">주정 소개</a>
+              <ul class="m_sub">
+                <li><a href="./sub/intro_01.html">주정용도</a></li>
+                <li><a href="./sub/intro_02.html">주정의 원료, 종류</a></li>
+                <li><a href="./sub/intro_03.html">주정의 제조 공정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="category">발효주정 용도</a>
+              <ul class="m_sub">
+                <li><a href="./sub/purpose_01.html">주정 용도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="category">발효주정 활용</a>
+              <ul class="m_sub">
+                <li><a href="#none">주정의 활용</a></li>
+                <li><a href="#none">제품 만들기 TIP</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="category">구입 방법</a>
+              <ul class="m_sub">
+                <li><a href="./sub/uses_01.html">발효주정 구입 절차</a></li>
+                <li><a href="./sub/uses_02.html">구매처</a></li>
+                <li><a href="./sub/board_04.html">온라인 상담</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="category">자료실</a>
+              <ul class="m_sub">
+                <li><a href="./sub/board_01.html">알코올 희석/환산표</a></li>
+                <li><a href="./sub/board_02.html">관련 업체 소개</a></li>
+                <li><a href="./sub/board_03.html">구입 서식</a></li>
+                <li><a href="./sub/board_04.html">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div> <!-- /MOBILE GNB end  -->
+
+    </header> <!-- ------------------- /header end ------------------- -->
+
+    <main id="container" class="index">
+
+      <!-- ------------------- section 01 ------------------- -->
+      <section data-anchor="Page 1" class="main_01">
+
+        <!-- Slider main container -->
+        <div class="swiper-container main_slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="inner_container slide_content">
+                <h3>천의 얼굴을 가진 <b class="point_b">순수</b>의 <b class="point_b">미학</b></h3>
+                <h2><b class="point_b">순수 곡물</b>과 <b class="point_b">발효 과학</b>이 만나 </h2>
+                <h2>탄생하는<b class="point_b">고품질</b>의 <b class="point_b">주정!</b></h2>
+                <span>다양한 용도로 삶을 더 편리하고 풍요롭게 만들어갑니다.</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner_container slide_content">
+                <h3><b class="point_b">미래</b>를 <b class="point_b">건강하게</b> 만드는 회사</h3>
+                <h2><b class="point_b">최첨단</b>의 <b class="point_b">검사 장비</b>를 갖추고</h2>
+                <h2><b class="point_b">정기적인 검사</b> 진행</h2>
+                <span>언제나 신뢰할 수 있는 최고 품질의 발효 주정을 공급하고 있습니다</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="water_mark">
+          <div class="water_icon"></div>
+          <div class="bullet"></div>
+        </div>
+        <!-- Folding box -->
+        <div class="folding">
+          <div class="inner_container">
+            <span>대한주정판매 소개</span>
+            <h3 onclick="location.href='./sub/about_02.html';">Company Introduction and History</h3>
+            <img src="./images/icon_right_arrow_l.png" alt="화살표 아이콘">
+          </div>
+        </div>
+      </section> <!-- ------------------- /section 01 ------------------- -->
+
+      <!-- ------------------- section 02 ------------------- -->
+      <section data-anchor="Page 2" class="main_02">
+        <div class="inner_container">
+
+          <div class="main_title_wrap">
+            <span class="water_mark"><img src="./images/icon_waterdrop_01.png" alt="물방울 페이지 마크"></span>
+            <h3 class="main_title"><b>깐깐</b>하다, <b>빈틈</b>없다. <b>발효주정의</b> <b class="point_b">품질관리</b></h3>
+            <h4>멈추지 않는 <b class="point_b">품질관리</b>를 위한 노력</h4>
+            <p>대한주정판매㈜는 주정의 품질관리를 위해 최첨단 검사장비를 갖추고</p>
+            <p>정기적인 검사를 통해 언제나 신뢰할 수 있는 주정만을 공급하고 있습니다.</p>
+          </div>
+
+          <ul class="main_02_list">
+            <li>
+              <a href="./sub/about_01.html">
+                <div class="icon_box"><img src="./images/icon_hand.png" alt="인사말 아이콘"></div>
+                <span class="main_02_list_title">CEO 인사말</span>
+                <p>인사드립니다.</p>
+                <p>대한주정판매㈜입니다.</p>
+              </a>
+            </li>
+            <li>
+              <a href="./sub/about_03.html">
+                <div class="icon_box"><img src="./images/icon_history.png" alt="히스토리 아이콘"></div>
+                <span class="main_02_list_title">HISTORY</span>
+                <p class=" clearfix">철저한 품질관리로 최고의 주정을 공급하는</p>
+                <p class=" clearfix">대한주정판매가 걸어온 길을 소개합니다.</p>
+              </a>
+            </li>
+            <li>
+              <a href="./sub/about_04.html">
+                <div class="icon_box"><img src="./images/icon_member.png" alt="멤버 아이콘"></div>
+                <span class="main_02_list_title">MEMBER</span>
+                <p>대한주정판매㈜를 이끌어 가고 있는</p>
+                <p>조직 및 구성원을 소개합니다.</p>
+              </a>
+            </li>
+            <li class="clearfix">
+              <a href="./sub/about_05.html">
+                <div class="icon_box"><img src="./images/icon_location.png" alt="로케이션 아이콘"></div>
+                <span class="main_02_list_title">LOCATION</span>
+                <p>대한주정판매㈜ 본사를</p>
+                <p>소개합니다.</p>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </section> <!-- ------------------- /section 02 ------------------- -->
+
+      <!-- ------------------- section 03 ------------------- -->
+      <section data-anchor="Page 3" class="main_03">
+        <div class="inner_container">
+
+          <div class="tap_btn_wrap">
+            <span class="water_mark">
+              <img src="./images/icon_waterdrop_02.png" alt="물방울 페이지 마크">
+            </span>
+            <h3 class="main_title"><b>BUSNIESS</b></h3>
+            <p>주정 구입 시 필요한 절차부터 관련 기관을 소개합니다.</p>
+            <ul class="tabs">
+              <li class="tab-link current" data-tab="tab-1">발효주정 구입절차</li>
+              <li class="tab-link" data-tab="tab-2">전국사무소, 소매업체</li>
+              <li class="tab-link" data-tab="tab-3">관련 제조 업체 소개</li>
+            </ul>
+          </div>
+
+          <!-- Tab01 - 발효주정 구입절차 -->
+          <div id="tab-1" class="tab-content current ">
+            <span class="tab_title">발효주정 <b class="point_b">구입절차</b></span>
+            <span class="tab_content_p">발효주정의 입고 및 출고관리는 전국의 세무서에서 담당하고 있으며, <i>수요자는 소정의 절차를 거쳐야 구입 가능합니다.</i>
+            </span>
+            <ul class="main_03_01_list">
+              <li>
+                <i>01</i>
+                <span class="tab_list_title">구입 예정일 전<br>구입 신고</span>
+                <p>주정 구입(출고) 신청서 작성 및<br> 관할 세무서에 제출, <br> 실수요자 증명 확인</p>
+              </li>
+              <li>
+                <i>02</i>
+                <span class="tab_list_title">신고 후<br>구입의뢰</span>
+                <p>구매 수량, 희망일자 등<br> 관할 본사 및 <br> 소매 회사에 통지</p>
+              </li>
+              <li>
+                <i>03</i>
+                <span class="tab_list_title">발효주정<br>출고</span>
+                <p>구입 의뢰, 주정 대금<br> 입금 확인 후 출고</p>
+              </li>
+              <li>
+                <i>04</i>
+                <span class="tab_list_title">구입 예정일 전<br>구입 신고</span>
+                <p>주정 구입(출고) 신청서 작성 및<br> 관할 세무서에 제출, <br> 실수요자 증명 확인</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="tab-2" class="tab-content">
+            <span class="tab_title">전국사무소, <b class="point_b">소매업체</b></span>
+            <span class="tab_content_p"><i>주류용 주정은 대한주정판매에서 비주류용 주정은 소매업체에서 구매하세요.</i>
+            </span>
+            <div class="office_wrap office_wrap_">
+              <h4><b class="point_b">전국</b>사무소</h4>
+              <div class="swiper office_list_01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>본사</span>
+                      <p>서울시 금천구 시흥대로 153길 16</p>
+                      <p>T. 02-780-6213</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>서울 사무소</span>
+                      <p>경기도 화성시 남양읍 주석로 324</p>
+                      <p>T. 02-856-1664</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>군산 사무소</span>
+                      <p>전북 군산시 풍전 4길 36</p>
+                      <p>T. 063-446-3877</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>전주 사무소</span>
+                      <p>전북 전주시 덕진구 반월로 74</p>
+                      <p>T. 063-211-0390</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>대구 사무소</span>
+                      <p>대구광역시 달서구 호산동로 6-5</p>
+                      <p>T. 053-582-2587</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>울산 사무소</span>
+                      <p>울산광역시 울주군 청량면 온산로 333</p>
+                      <p>T. 052-277-1020</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>마산 사무소</span>
+                      <p>경남 함안군 칠서면 계룡로 55</p>
+                      <p>T. 055-232-8566</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="office_wrap office_wrap__">
+              <h4><b class="point_b">소매</b>업체</h4>
+              <div class="swiper office_list_02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>대한주정 라이프</span>
+                      <p>경기도 화성시 우정읍 버들로 899-57</p>
+                      <p>T. 031-8077-2495</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>주정 판매 월드</span>
+                      <p>전북 전주시 덕진구 팔복동 4가 205-7</p>
+                      <p>T. 063-214-0040</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>우리 주정</span>
+                      <p>부산광역시 금정구 공단로 54 (금사동)</p>
+                      <p>T. 051-204-6262</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev-a"></div>
+              <div class="swiper-button-next-a"></div>
+            </div>
+          </div>
+
+          <!-- Tab03 / 관련 제조 업체 소개 -->
+          <div id="tab-3" class="tab-content">
+            <span class="tab_title">관련 제조 <b class="point_b">업체 소개</b></span>
+            <span class="tab_content_p"><i>주류용 주정은 대한주정판매에서 비주류용 주정은 소매업체에서 구매하세요.</i>
+            </span>
+            <div class="office_wrap office_wrap_">
+              <h4>주정제조 회사소개</h4>
+              <div class="swiper office_list_03">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜창해에탄올</span>
+                      <p>전라북도 전주시 덕진구원만성로15</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜진로발효</span>
+                      <p>경기도 안산시 단원구 별망로 594</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>일신실업㈜</span>
+                      <p>경상남도 함안군 칠서면 대부로551</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>서영주정㈜</span>
+                      <p>전라북도 군산시 외항로 366</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>풍국주정공업㈜</span>
+                      <p>대구광역시 달서구 성서로 72</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜MH에탄올</span>
+                      <p>경상남도 창원시 마산회원구 내서읍 광려천남로 25</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>한국알콜산업㈜</span>
+                      <p>울산광역시 남구 상개로 66</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>롯데칠성음료㈜</span>
+                      <p>전라북도 군산시 외항1길222</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>서안주정㈜</span>
+                      <p>전라북도 군산시 외항 6길 67</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev-b"></div>
+              <div class="swiper-button-next-b"></div>
+            </div>
+            <div class="office_wrap">
+              <h4>소주제조 회사소개</h4>
+              <div class="swiper office_list_04">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>하이트진로㈜</span>
+                      <p>본사 - 서울특별시 강남구 영동대로 714 하이트빌딩</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>롯데칠성음료㈜</span>
+                      <p>본사 - 서울시 송파구 신천동 7-18 롯데캐슬골드 5층</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜무학</span>
+                      <p>경상남도 창원시 마산회원구 봉암공단 2길6</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜금복주</span>
+                      <p>대구광역시 달서구 성서로 276</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>보해양조㈜</span>
+                      <p>전라남도 장성군 장성읍 보해길41</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜더맥키스컴퍼니</span>
+                      <p>대전광역시 서구 영골길 158</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>대선주조㈜</span>
+                      <p>부산광역시 동래구 여고로 77</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜충북소주</span>
+                      <p>충청북도 청원군 내수읍 우산길 57</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜한라산</span>
+                      <p>제주특별자치도 제주시 한림읍 한림로 555</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide_bg">
+                      <span>㈜제주소주</span>
+                      <p>제주특별자치도 조천읍 중산간동로 1028</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev-c"></div>
+              <div class="swiper-button-next-c"></div>
+            </div>
+          </div>
+
+        </div>
+      </section> <!-- ------------------- /section 03 ------------------- -->
+
+      <!-- ------------------- section 04 ------------------- -->
+      <section data-anchor="Page 4" class="main_04">
+        <div class="inner_container">
+
+          <div class="tap_btn_wrap">
+            <span class="water_mark">
+              <img src="./images/icon_waterdrop_03.png" alt="물방울 페이지 마크">
+            </span>
+            <h3 class="main_title"><b>자료실</b></h3>
+            <p>주정 취급 시 필요한 자료부터 신고 양식을 안내합니다.</p>
+
+            <ul class="tab_">
+              <li class="tab-link active" data-tab="tab-4"><a href="#">알코올희석, 환산표</a></li>
+              <li class="tab-link" data-tab="tab-5"><a href="#">서식 다운로드</a></li>
+            </ul>
+
+          </div>
+
+          <!-- Tab01 - 알코올희석, 환산표 -->
+          <div id="tab-4" class="tab-contents active">
+            <ul class="main_04_01_list">
+              <li>
+                <div class="table_down">
+                  <span>알코올 <b>희석표</b></span>
+                  <p>알코올을 희석하고자 할 때 알코올과 물의 ml를 계산하는 표</p>
+                  <div class="btn_down_b">
+                    <div class="btn_layer"></div>
+                    <a href="#none">DOWNLOAD</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="table_down">
+                  <span>알코올 <b>용량 환산표</b></span>
+                  <p>알코올 용량 환산표는 알코올 도수 94% 일 때 적용되는 용량 환산표</p>
+                  <div class="btn_down_g">
+                    <div class="btn_layer"></div>
+                    <a href="#none">DOWNLOAD</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="table_down">
+                  <span>알코올 <b>도수 환산표</b></span>
+                  <p>알코올 도수 환산표는 주정계로 알코올의 도수를 측정할 때 보는 표</p>
+                  <div class="btn_down_b">
+                    <div class="btn_layer"></div>
+                    <a href="#none">DOWNLOAD</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> <!-- /Tab01 -->
+          <!-- Tab02 - 자료실 -->
+          <div id="tab-5" class="tab-contents">
+            <ul class="main_04_01_list main_04_02_list">
+              <li>
+                <div class="table_down">
+                  <span>주정 구입 <b>신고서</b></span>
+                  <p>제조 업체용 구입 서식 <i>(주류 및 식음용)</i> <i>[주세 사무처리 규정 제 43호 서식]</i> </p>
+                  <div class="btn_down_b">
+                    <div class="btn_layer"></div>
+                    <a href="#none">DOWNLOAD</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="table_down">
+                  <span>주정 실수요자 <b>신청서</b></span>
+                  <p>제조 업체용 구입 서식 <i>(식음용 외의 공업용)</i> <i>[주세 사무처리 규정 제 42호 서식]</i> </p>
+                  <div class="btn_down_g">
+                    <div class="btn_layer"></div>
+                    <a href="#none">DOWNLOAD</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /Tab01 -->
+
+        </div>
+      </section> <!-- ------------------- /section 04 ------------------- -->
+
+      <!-- ------------------- section 05 ------------------- -->
+      <section data-anchor="Page 5" class="main_05">
+        <div class="inner_container">
+          <div class="main_title_wrap">
+            <span class="water_mark"><img src="./images/icon_waterdrop_04.png" alt="물방울 페이지 마크"></span>
+            <h3 class="main_title"><b>CONTACT</b></h3>
+          </div>
+
+          <ul class="contact_list">
+            <li>
+              <span class="contact_list_title">고객센터</span>
+              <ul class="center_list">
+                <li class="point_b">
+                  <i><img src="./images/icon_phone.png" alt="전화 아이콘"></i>
+                  02 - 780 - 6213
+                </li>
+                <li>
+                  <i><img src="./images/icon_fax.png" alt="팩스 아이콘"></i>
+                  02 - 780 - 6405
+                </li>
+                <li>
+                  <i><img src="./images/icon_mail.png" alt="메일 아이콘"></i>
+                  kasc7211@naver.com
+                </li>
+                <li class="contact_info">
+                  <span><b>평일</b> 09:00~06:00 <i>|</i> </span>
+                  <span><b>점심</b> 12:00~13:00</span>
+                  <span><b>휴일</b> 법정공휴일</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="contact_list_title">온라인 상담</span>
+              <div class="btn_wrap btn_wrap_">
+                <img src="./images/icon_wallet.png" alt="지갑 아이콘">
+                <div class="btn_p_inquiry">
+                  <div class="btn_layer"></div>
+                  <a href="./sub/board_04_online.html">제품 구입 문의</a>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <img src="./images/icon_chat.png" alt="지갑 아이콘">
+                <div class="btn_inquiry">
+                  <div class="btn_layer"></div>
+                  <a href="./sub/board_04_one.html">
+                    1:1문의<span>궁금한 사항은 언제든 문의주세요</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- 게시판 영역 -->
+            <li class="board_list">
+              <span class="contact_list_title">공지사항</span>
+              <img onclick="location.href='./sub/board_04.html';" class="btn_plus" src="./images/icon_plus.png" alt="더보기 버튼 이미지">
+              <table class="notice_board">
+                <tbody>
+                  <tr>
+                    <td>이 영역은 게시판 영역입니다. 자세한 사항은 게시판을 참고</td>
+                    <td>2021.11.29</td>
+                  </tr>
+                  <tr>
+                    <td>이 영역은 게시판 영역입니다. 자세한 사항은 게시판을 참고</td>
+                    <td>2021.11.29</td>
+                  </tr>
+                  <tr>
+                    <td>이 영역은 게시판 영역입니다. 자세한 사항은 게시판을 참고</td>
+                    <td>2021.11.29</td>
+                  </tr>
+                  <tr>
+                    <td>이 영역은 게시판 영역입니다. 자세한 사항은 게시판을 참고</td>
+                    <td>2021.11.29</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </div> <!-- /inner.container -->
+
+        <!-- ------------------- footer ------------------- -->
+        <footer>
+          <div class="container">
+            <div class="footer_info">
+              <span><i>상호 :</i> 대한주정판매㈜</span>
+              <span><i>대표 :</i> 최상로</span>
+              <span><i>주소 :</i> 서울특별시 금천구 시흥대로 153번길 16, 7층</span>
+              <span></span>
+              <span><i>TEL :</i> 02-780-6213</span>
+              <span><i>FAX :</i> 02-780-6405</span>
+              <span><i>Email :</i> kasc7211@naver.com</span>
+            </div>
+            <div class="footer_gnb">
+              <div class="footer_copy">
+                COPYRIGHT ⓒ 2021 대한주정판매㈜ ALL RIGHTS RESERVED.
+              </div>
+              <div class="footer_nav clearfix">
+                <ul>
+                  <li><a href="./sub/footer_t.html">이용약관</a></li>
+                  <li><a href="./sub/footer_p.html" class="point_b">개인정보처리방침</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOP_btn -->
+            <div class="top_btn" onclick="location.href='index.html'">TOP</div>
+          </div>
+        </footer> <!-- ------------------- /footer ------------------- -->
+
+      </section> <!-- ------------------- /section 05 ------------------- -->
+    </main>
+
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <!-- aos JS / animation -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+
+  </script>
+  <!-- swiper JS / slider -->
+  <script src="./js/swiper.min.js"></script>
+  <!-- Pageable JS / fullpage -->
+  <script src="./js/pageable.min.js"></script>
+  <!-- My CSS -->
+  <script src="./js/header.js"></script>
+  <script src="./js/main.js"></script>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+@charset "utf-8";
+@import url(layout.css);
+
+/* ---------------------------- 레이아웃 ---------------------------- */
+header{
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    /* 애니메이션 트렌지션 */
+    -webkit-transition: all 0.3s ease-in-out;  
+    -moz-transition: all 0.3s ease-in-out;  
+    -ms-transition: all 0.3s ease-in-out;   
+    -o-transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;  
+    /* header bg */
+    background-color: rgba(255, 255, 255, 0.4);      
+}
+.nav_wrap {  
+    width:100%;
+    position: relative; 
+}
+.nav_inner{ 
+    width:1600px; 
+    margin:0px auto; 
+    position: relative;  
+}
+.nav_inner:after{ 
+    content:''; 
+    display:block; 
+    clear:both; 
+}
+.nav_wrap .menu { 
+    width: 100%; 
+    height: 80px; 
+    margin: 0 auto; 
+    line-height: 80px; 
+    float:left; 
+    position: relative; 
+    z-index: 999; 
+}   
+
+/* ---------------------------- PC GNB ---------------------------- */
+
+/* 1차 메뉴 */
+.nav_wrap .menu .gnb { width: 100%; }
+/* GNB LOGO */
+.nav_wrap .menu .gnb li.gnb_logo{ 
+    float: left; 
+    margin-right: 8%;
+}
+.nav_wrap .menu .gnb li.hamburgur_btn{
+    float: right;
+    cursor: pointer;
+}
+.nav_wrap .menu .gnb li.gnb_logo h1 a img{ padding-top: 15px; }
+.nav_wrap .menu .gnb li.view { 
+    width: 12%;/*1차카테고리넓이*/ 
+    float: left; 
+    font-size: 18px;
+    text-align: center; 
+    color:#fff; 
+}
+.nav_wrap .menu .gnb li.view:after { 
+    display: block; 
+    clear: both; 
+    content: ''; 
+}
+/* 2차 메뉴 */
+.nav_wrap .menu .gnb li.view .depth { 
+    height: 208px; 
+    line-height: 35px; 
+    display:none; 
+    text-align:center; 
+    position: relative; 
+    z-index: 999; 
+    border-right: 1px solid #dddddd;
+}
+.nav_wrap .menu .gnb li.view .depth_01{ 
+    border-left: 1px solid #dddddd;
+}
+.nav_wrap .menu .gnb li.view a { 
+    color:#231815;  
+    font-weight:600;  
+    display: block; 
+    position: relative;   
+}
+.nav_wrap .menu .gnb li.view:hover > a::after {  
+    -webkit-transition: all 0.3s ease-in-out;  
+    -moz-transition: all 0.3s ease-in-out;  
+    -ms-transition: all 0.3s ease-in-out;  
+    -o-transition: all 0.3s ease-in-out;  
+    transition: all 0.3s ease-in-out; 
+    opacity: 1;  
+    visibility: visible; 
+    bottom: 0px;          
+}
+.nav_wrap .menu .gnb li.view a::after {  
+    content: '';   
+    width: 100%;   
+    height: 1px;    
+    background-color: #1072d2;/*상단 카테고리바 색상*/
+    opacity: 0;   
+    visibility: hidden;  
+    -webkit-transition: all 0.3s ease-in-out;  
+    -moz-transition: all 0.3s ease-in-out;  
+    -ms-transition: all 0.3s ease-in-out;   
+    -o-transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;            
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%);  
+    bottom: 11px;  
+}
+.nav_wrap .menu .gnb li.view .depth li a { 
+    font-size: 16px;  
+    font-weight: 300; 
+    color:#444; /*중분류*/
+    line-height: 2.6;
+}
+.nav_wrap .menu .gnb li.view .depth li a:hover {   
+    color:#fff;/*마우스 오버시 색상변경*/
+    background-color: #1072d2;
+}
+
+/* ---------------------------- header .nav_wrap.on 메뉴고정 ---------------------------- */
+.nav_wrap.on { 
+    background-color:#fff; 
+    z-index: 1000; 
+}
+.nav_wrap .menu_bg { 
+    width: 100%; 
+    height: 208px; 
+    display:none; 
+    background-color:rgba(255, 255, 255, 1);  
+    border-top: 1px solid #e4e4e4; 
+    border-bottom: 1px solid #e4e4e4;
+    position: absolute; 
+    top:80px; 
+    left:0%; 
+    z-index:9; 
+}
+
+/* sitemap 레이어  */
+.site_map_layer{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: fixed;
+    z-index: 9999;
+}
+.site_map_layer span{ 
+    display: block;
+    cursor: pointer; 
+}
+
+.center{ 
+    position: relative;
+}
+.center::after{
+    content: '';
+    width: 14px;
+    height: 8px;
+    background: url('/assets/images/icon_bullet_down.png') no-repeat center center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+.center.on::after{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.center_menu{
+    display: none;
+    width: 100%;
+    background-color: #fff;
+}
+.center.on .center_menu{
+    display: block;
+}
+.center_menu span{
+    display: block;
+    font-size: 1.4rem !important;
+}
+
+
+
+
+/* mobile 메누 가리기(PC ~ 1025) */
+.mobile_gnb{ display: none; }
+
+
+
+/* ------------------------------------------ Media Query Start ------------------------------------------ */ 
+@media screen and (min-width: 1921px){
+    header{
+        position: fixed;
+        left: 0;
+    }
+}
+@media screen and (max-width: 1600px){
+    .nav_inner{width: 100%;}
+}
+
+@media screen and (max-width: 1390px){    
+    .nav_wrap .menu .gnb li.gnb_logo{ margin-right: 5%; } 
+    .hamburgur_btn{ display: none; }
+    .nav_wrap .menu .gnb li.view{ font-size: 1.4rem; }
+    .nav_wrap .menu .gnb li.view .depth li a{ font-size: 1.4rem;}
+    
+}
+@media screen and (max-width: 1200px){
+    .nav_wrap .menu .gnb li.view{ font-size: 1.2rem; }
+    .nav_wrap .menu .gnb li.view .depth li a{ font-size: 1rem;}
+}
+
+/* 1024이하 : iPad */
+@media screen and (max-width: 1024px){
+
+    header{ width: 100%; }    
+    header.active{ background-color: #fff !important; }    
+    .pc_gnb{ display: none;}
+    .mobile_gnb{  
+        width: 100%;
+        height: 80px;
+        display: block;        
+        position: relative;
+    }    
+    .m_header{ 
+        width: 100%; 
+        height: 100%; 
+        padding: 0 35px;
+    }
+    .m_header .m_logo{ 
+        height: 100%; 
+        float: left; 
+    }
+    .m_header .m_logo a { 
+        height: 100%; 
+        line-height: 80px; 
+    }
+    .m_header .m_logo a img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .m_header .m_hamburgur{ float: right;}
+
+    /* 햄버거버튼 css & 애니메이션 */
+    .menu-trigger {
+        margin-top: 30px;
+    }
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }    
+    .menu-trigger {
+        position: relative;
+        width: 25px;
+        height: 20px;
+    }    
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #1072d2;
+        border-radius: 2px;
+    }
+    .menu-trigger span:nth-of-type(1){ top: 0; }    
+    .menu-trigger span:nth-of-type(2){ top: 9px; }    
+    .menu-trigger span:nth-of-type(3) { bottom: 0; }
+
+    /* 중앙 라인이 밖으로 빠지면서 상하라인 엑스자 만들기 */
+    .menu-trigger.active span:nth-of-type(1) {
+        -webkit-transform : translateY(14px) rotate(-45deg);
+        transform : translateY(14px) rotate(-45deg);
+    }
+    .menu-trigger.active span:nth-of-type(2) {
+        left : 50%;
+        opacity : 0;
+        -webkit-animation : active-menu-bar05 .8s forwards;
+        animation : active-menu-bar05 .8s forwards;
+    }
+    @-webkit-keyframes active-menu-bar05 {
+        100% {
+            height: 0;
+        }
+    }
+    @keyframes active-menu-bar05 {
+        100% {
+            height: 0;
+        }
+    }
+    .menu-trigger.active span:nth-of-type(3) {
+        -webkit-transform : translateY(-4px) rotate(45deg);
+        transform : translateY(-4px) rotate(45deg);
+    }
+
+    .m_nav{ 
+        width: 100%;  
+        position: absolute;
+        transition: all 0.3s ease-in-out; 
+    }
+    .m_nav ul{ width: 100%;}
+    .m_nav ul.m_menu li{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-indent: 35px;
+        background-color: #fff;
+    }
+    .m_nav ul.m_menu li a{
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 52px;
+        display: block;        
+    }
+    /* 카테고리 클릭시 불렛 모양 바꾸기 */
+    .m_nav ul.m_menu li a.category{
+        background: url('/assets/images/icon_bullet_down_b.png') no-repeat 96% center;
+    }
+    .m_nav ul.m_menu li.active a.category{
+        background: url('/assets/images/icon_bullet_up_b.png') no-repeat 96% center;
+    }
+    .m_nav ul.m_menu li:hover>a{ color: #1072d2; }
+    .m_nav ul.m_menu li.active>a{ color: #1072d2; }
+    .m_nav ul.m_menu li .m_sub{
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #1072d2;       
+    }
+    .m_nav ul.m_menu li .m_sub li{
+        width: 100%;
+        border-bottom: 1px solid rgba(87,145,204,0.2);
+    }
+    .m_nav ul.m_menu li .m_sub li:last-child{
+        border-bottom: 1px solid #1072d2;
+    }
+    .m_nav ul.m_menu li  .m_sub a{
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-indent: 65px;
+        display: block;
+        float: left;
+        position: relative;
+        z-index: 999;
+    }
+    
+
+    
+}
+/* 768이하 : iPad Retina */
+@media screen and (max-width: 768px){}
+/* 500이하 : Mobile */
+@media screen and (max-width: 500px){
+
+}
+/* 400 이하 */
+@media screen and (max-width: 400px){
+    .m_header{
+        padding: 0 15px;
+    }
+}
+/* 320이하 */
+@media screen and (max-width: 320px){}
+
+
+
